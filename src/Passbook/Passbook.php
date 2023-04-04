@@ -104,7 +104,7 @@ mysqli_close($conn);
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "E-wallet";
+$database = "e-wallet";
 $conn = mysqli_connect($servername, $username, $password, $database);
 
 

@@ -3,11 +3,11 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "E-wallet";
+$database = "e-wallet";
 $conn = mysqli_connect($servername, $username, $password, $database);
 
 if (!$conn) {
-    die(mysqli_error($conn));
+    die(mysqli_error($conn));  
 }
 
 $mobNo = $_POST["mobNo"];

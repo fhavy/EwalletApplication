@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "E-wallet";
+$database = "e-wallet";
 $conn = mysqli_connect($servername, $username, $password, $database);
 
 if (!$conn) {
@@ -14,7 +14,6 @@ $fName = $_POST['firstName'];
 $lName = $_POST['lastName'];
 $mob = $_POST["mobNo"];
 $email = $_POST["email"];
-$adhNo = $_POST["adhNo"];
 $pass = $_POST["pass"];
 
 if (!$mob) {
@@ -26,7 +25,7 @@ if (!$mob) {
     window.location.href='signup2.html';</script>";
  }
 
-$insert = "insert into signup values('$fName','$lName',$mob,'$email',$adhNo,'$pass')";
+$insert = "insert into signup values('$fName','$lName',$mob,'$email','$pass')";
 $bal ="insert into Balance values($mob,0)";
 mysqli_query($conn, $bal);
 if (mysqli_query($conn, $insert)) {

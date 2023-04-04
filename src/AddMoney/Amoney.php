@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "E-wallet";
+$database = "e-wallet";
 $conn = mysqli_connect($servername, $username, $password, $database);
 
 $amnt = $_POST['amnt'];
@@ -12,7 +12,7 @@ $amnt = $_POST['amnt'];
 
   $mobNo = $_SESSION['regName'];
   
-  date_default_timezone_set("Asia/Kolkata");
+  date_default_timezone_set("n");
   $dt = date("Y-m-d");
   $tm = date("H:i:s");
 
